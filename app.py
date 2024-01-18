@@ -36,8 +36,8 @@ ordered_list = sorted_data[:5]
 
 # Write JSON content to a file
 output_file_path = 'index.html'
-with open("output_file_path", "w") as output_file:
-    print("<!DOCTYPE html> <body>", file=output_file)
+
+with open(output_file_path, "w") as output_file:
     for entry in ordered_list:
         print(entry, file=output_file)
     output_file.close()
